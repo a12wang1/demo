@@ -1,112 +1,112 @@
-DEMO
+ï»¿DEMO
 ===========================
 
-###########×¼±¸
+###########å‡†å¤‡
 1. node v0.10.28+
-2. Ganache¿Í»§¶Ë£¬ĞŞ¸Ä¶Ë¿ÚºÅÎª9545
-3. ¹È¸èä¯ÀÀÆ÷£¬°²×°MetaMask²å¼ş£¬Á¬½Óµ½http://127.0.0.1:9545
-4. ½«GanacheÌá¹©µÄ²âÊÔÕË»§µ¼Èëµ½MetaMaskÖĞ
+2. Ganacheå®¢æˆ·ç«¯ï¼Œä¿®æ”¹ç«¯å£å·ä¸º9545
+3. è°·æ­Œæµè§ˆå™¨ï¼Œå®‰è£…MetaMaskæ’ä»¶ï¼Œè¿æ¥åˆ°http://127.0.0.1:9545
+4. å°†Ganacheæä¾›çš„æµ‹è¯•è´¦æˆ·å¯¼å…¥åˆ°MetaMaskä¸­
 
 
-###########²¿Êğ²½Öè
+###########éƒ¨ç½²æ­¥éª¤
 
-1. ½«sqlÎÄ¼şÏÂµÄsqlµ¼ÈëÊı¾İ¿âÖĞ
-2. ÔÚmodules/modelHead.jsĞŞ¸ÄÏà¹ØÎÄ¼şĞÅÏ¢
-3. npm install °²×°Ïà¹Ø»·¾³±äÁ¿
+1. å°†sqlæ–‡ä»¶ä¸‹çš„sqlå¯¼å…¥æ•°æ®åº“ä¸­
+2. åœ¨modules/modelHead.jsä¿®æ”¹ç›¸å…³æ–‡ä»¶ä¿¡æ¯
+3. npm install å®‰è£…ç›¸å…³ç¯å¢ƒå˜é‡
 4. truffle compilete 
-5. truffle migrate --reset £¨current block ²»Îª0 £¬²¿Êğ³É¹¦£©
-6. npm start Æô¶¯ÏîÄ¿
+5. truffle migrate --reset ï¼ˆcurrent block ä¸ä¸º0 ï¼Œéƒ¨ç½²æˆåŠŸï¼‰
+6. npm start å¯åŠ¨é¡¹ç›®
 
 
-###########Ä¿Â¼½á¹¹ÃèÊö
-©¦  .project
-©¦  app.js  //¶ÔÍâ½Ó¿Ú
-©¦  asyncSeries.js
-©¦  package-lock.json
-©¦  package.json
-©¦  README.md
-©¦  truffle-box.json
-©¦  truffle-config.js
-©¦  truffle.js  //¿ÉĞŞ¸ÄÁ¬½Ó¶Ë¿Ú
-©¦
-©À©¤bin  
-©¦      www  //Ö÷Â·¾¶
-©¦
-©À©¤contracts  //ºÏÔ¼
-©¦      Coin.sol
-©¦      Migrations.sol
-©¦
-©À©¤migrations
-©¦      1_initial_migration.js
-©¦      2_deploy_contracts.js
-©¦
-©À©¤modules  //Êı¾İ¿âÁ¬½Ó
-©¦      modelHead.js
-©¦
-©À©¤public
-©¦  ©À©¤images  // Í¼Æ¬
-©¦  ©¦      engine_1.jpg
-©¦  ©¦      engine_2.jpg
-©¦  ©¦      engine_3.jpg
-©¦  ©¦      engine_4.jpg
-©¦  ©¦      engine_5.jpg
-©¦  ©¦      LED´óµÆ.jpg
-©¦  ©¦      power.jpg
-©¦  ©¦      tyer_1.jpg
-©¦  ©¦      tyer_2.jpg
-©¦  ©¦      tyer_3.jpg
-©¦  ©¦      Ç°ÃÅ.jpg
-©¦  ©¦      Ñ¹Ëõ»ú.jpg
-©¦  ©¦      ±äËÙÏä_1.jpg
-©¦  ©¦      ±äËÙÏä_2.jpg
-©¦  ©¦      ·½ÏòÅÌ.jpg
-©¦  ©¦      »ğ»¨Èû.jpg
-©¦  ©¦      Ğîµç³Ø.jpg
-©¦  ©¦
-©¦  ©À©¤javascripts  //JS 
-©¦  ©¦      app.js
-©¦  ©¦      bootstrap.min.js
-©¦  ©¦      connect.js
-©¦  ©¦      iziModal.min.js
-©¦  ©¦      jquery-2.1.4.min.js
-©¦  ©¦      jquery.min.js
-©¦  ©¦      jquery.pagination.js
-©¦  ©¦      purchase.js
-©¦  ©¦      truffle-contract.js
-©¦  ©¦      web3.min.js
-©¦  ©¦
-©¦  ©¸©¤stylesheets  //CSS 
-©¦          App.css
-©¦          bootstrap.min.css
-©¦          bootstrap.min.css.map
-©¦          demo.css
-©¦          iconfont.css
-©¦          index.css
-©¦          iziModal.css
-©¦          open-sans.css
-©¦          oswald.css
-©¦          pure-min.css
-©¦          style.css
-©¦          style1.css
-©¦
-©À©¤routes  //ºóÌ¨
-©¦      users.js
-©¦
-©À©¤sql      //Êı¾İ¿â
-©¦      shop_merchant.sql
-©¦      shop_parts.sql
-©¦      shop_routines.sql
-©¦      shop_shops.sql
-©¦
-©À©¤test
-©¦      .gitkeep
-©¦      TestAdoption.sol
-©¦
-©¸©¤views         //Ò³Ãæ´æ·ÅÂ·¾¶
-    ©¦  error.ejs
-    ©¦
-    ©¸©¤index
-            details.ejs  // ÏêÇéÒ³Ãæ
-            index.ejs   // Ê×Ò³
-            purchase.ejs  //¹ºÂò¼ÇÂ¼Ò³Ãæ
+###########ç›®å½•ç»“æ„æè¿°
+â”‚  .project
+â”‚  app.js  //å¯¹å¤–æ¥å£
+â”‚  asyncSeries.js
+â”‚  package-lock.json
+â”‚  package.json
+â”‚  README.md
+â”‚  truffle-box.json
+â”‚  truffle-config.js
+â”‚  truffle.js  //å¯ä¿®æ”¹è¿æ¥ç«¯å£
+â”‚
+â”œâ”€bin  
+â”‚      www  //ä¸»è·¯å¾„
+â”‚
+â”œâ”€contracts  //åˆçº¦
+â”‚      Coin.sol
+â”‚      Migrations.sol
+â”‚
+â”œâ”€migrations
+â”‚      1_initial_migration.js
+â”‚      2_deploy_contracts.js
+â”‚
+â”œâ”€modules  //æ•°æ®åº“è¿æ¥
+â”‚      modelHead.js
+â”‚
+â”œâ”€public
+â”‚  â”œâ”€images  // å›¾ç‰‡
+â”‚  â”‚      engine_1.jpg
+â”‚  â”‚      engine_2.jpg
+â”‚  â”‚      engine_3.jpg
+â”‚  â”‚      engine_4.jpg
+â”‚  â”‚      engine_5.jpg
+â”‚  â”‚      LEDå¤§ç¯.jpg
+â”‚  â”‚      power.jpg
+â”‚  â”‚      tyer_1.jpg
+â”‚  â”‚      tyer_2.jpg
+â”‚  â”‚      tyer_3.jpg
+â”‚  â”‚      å‰é—¨.jpg
+â”‚  â”‚      å‹ç¼©æœº.jpg
+â”‚  â”‚      å˜é€Ÿç®±_1.jpg
+â”‚  â”‚      å˜é€Ÿç®±_2.jpg
+â”‚  â”‚      æ–¹å‘ç›˜.jpg
+â”‚  â”‚      ç«èŠ±å¡.jpg
+â”‚  â”‚      è“„ç”µæ± .jpg
+â”‚  â”‚
+â”‚  â”œâ”€javascripts  //JS 
+â”‚  â”‚      app.js
+â”‚  â”‚      bootstrap.min.js
+â”‚  â”‚      connect.js
+â”‚  â”‚      iziModal.min.js
+â”‚  â”‚      jquery-2.1.4.min.js
+â”‚  â”‚      jquery.min.js
+â”‚  â”‚      jquery.pagination.js
+â”‚  â”‚      purchase.js
+â”‚  â”‚      truffle-contract.js
+â”‚  â”‚      web3.min.js
+â”‚  â”‚
+â”‚  â””â”€stylesheets  //CSS 
+â”‚          App.css
+â”‚          bootstrap.min.css
+â”‚          bootstrap.min.css.map
+â”‚          demo.css
+â”‚          iconfont.css
+â”‚          index.css
+â”‚          iziModal.css
+â”‚          open-sans.css
+â”‚          oswald.css
+â”‚          pure-min.css
+â”‚          style.css
+â”‚          style1.css
+â”‚
+â”œâ”€routes  //åå°
+â”‚      users.js
+â”‚
+â”œâ”€sql      //æ•°æ®åº“
+â”‚      shop_merchant.sql
+â”‚      shop_parts.sql
+â”‚      shop_routines.sql
+â”‚      shop_shops.sql
+â”‚
+â”œâ”€test
+â”‚      .gitkeep
+â”‚      TestAdoption.sol
+â”‚
+â””â”€views         //é¡µé¢å­˜æ”¾è·¯å¾„
+    â”‚  error.ejs
+    â”‚
+    â””â”€index
+            details.ejs  // è¯¦æƒ…é¡µé¢
+            index.ejs   // é¦–é¡µ
+            purchase.ejs  //è´­ä¹°è®°å½•é¡µé¢
             success.ejs 
