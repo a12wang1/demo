@@ -10,7 +10,7 @@
 
 ###########部署步骤
 
-1. 将sql文件下的sql导入数据库中
+1. 将sql文件下的sql导入MySQL数据库中
 2. 在modules/modelHead.js修改相关文件信息
 3. npm install 安装相关环境变量
 4. truffle compilete 
