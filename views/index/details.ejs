@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Automotive Part Shop</title>
+		<link href="/stylesheets/bootstrap.min.css" >
+		<link href="/stylesheets/oswald.css" />
+		<link href="/stylesheets/index.css" />
+		<link href="/stylesheets/open-sans.css" />
+		<link href="/stylesheets/pure-min.css" />
+		<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css"> 
+		<link href="/stylesheets/demo.css" rel="stylesheet" />
+    	<link href="/stylesheets/iziModal.css" rel="stylesheet" />
+		<link href="/stylesheets/bootstrap.min.css" />
+    	<style>
+    		a:link, a:visited, a:active {
+			    text-decoration: none;
+			    color: #000000; 
+			}
+    	</style>
+	</head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="/javascripts/web3.min.js"></script>
+    <script src="javascripts/truffle-contract.js"></script>
+	<script src="https://cdn.bootcss.com/react/15.4.2/react.min.js"></script>
+	<script src="https://cdn.bootcss.com/react/15.4.2/react-dom.min.js"></script>
+	<script src="/javascripts/iziModal.min.js"></script>
+	<body>
+		
+		<div id="index" style="display: block;">
+			<div class="container">
+		        <div class="row" style=" position: relative;">
+	          		<div class="col-xs-12 col-sm-8 col-sm-push-2">
+			            <h1 class="text-center" style="font-size: 36px; margin-bottom: 10px; margin-top: 20px;">商品详情页面</h1>
+			            <hr/>
+			            <br/>
+	          		</div>
+	          		<a href="/" style="position: absolute; top: 38%; right: 0;">返回首页</a>
+		        </div>
+				
+		        <div id="partTemplate" class="row" style="display: block;"></div>
+	      	</div>
+	      	<div class="container" style="display: none;">
+	      		<div id="partshow" style="overflow:hidden;">
+	      			<div class="col-sm-12 col-md-12 col-lg-5">
+	      				<div style="border: 1px solid;">
+	      					<img alt="140*140" data-src="holder.js/140x140" class="img-rounded img-center" style="width: 80%; " src="/images/engine_1.jpg" data-holder-rendered="true">
+	      				</div>
+	      				<div style="overflow: hidden; margin-top: 10px;">
+					  		<div class="col-xs-3 col-md-3 col-lg-3" style=" float: left;"><img src="/images/engine_1.jpg" style="width: 100%; " /></div>
+					  		<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" style=" float: left; margin-left: 10px; margin-right: 10px;"><img src="/images/engine_1.jpg" style="width: 100%; " /></div>
+					  		<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" style=" float: left;"><img src="/images/engine_1.jpg" style="width: 100%;" /></div>
+				  		</div>
+	      			</div>
+	      			<div class="col-lg-1"></div>
+	      			<div class="col-sm-12 col-md-12 col-lg-5">
+	      				<h1 class="panel-title" style="`line-height: 1; font-size: 16px; font-weight: 700; font-family: 'microsoft yahei';">Scrappy</h1>
+	      				<br />
+	      				<ul>
+	      					<li>
+	      						<strong>品牌&nbsp;</strong>:&nbsp;<span class="part-breed">米其林</span><br/>
+	      						<br />
+	      					</li>
+	      					<li>
+	      						<strong>产地&nbsp;</strong>:&nbsp;<span class="part-location">中国上海</span><br/><br />
+	      					</li>
+	      					<li>
+	      						<strong>购买数量&nbsp;</strong>:&nbsp;<input class="min" name="" type="button" value="-" />
+								<input class="text_box" name="goodnum" type="text" value="1" style="width:40px;margin: 0; padding: 0;" />
+								<input class="add" name="" type="button" value="+" />
+								（剩余库存: <span class="part-quantity">27</span>）
+								<br/><br/>
+	      					</li>
+	      					<li>
+	      						<strong>价格&nbsp;</strong>:&nbsp;<span class="part-price"> $122</span>
+	      					</li>
+	      				</ul>
+				  		<button class="btn-adopt" style="width: 50%; margin-left: 25%;background-color: #ffeded; border: 1px solid #FF0036; color: #FF0036; font-family: 'microsoft yahei'; height: 38px; line-height: 38px; text-align: center; font-size: 16px;">立即购买</button>
+				  		<div>
+				  			<br />
+				  			<span style="color: red;">
+				  				*温馨提示：确认购买后订单不可更改，您的购买信息将记录在区块链上
+				  			</span>
+				  		</div>
+	      			</div>
+	      		</div>
+	      		<br />
+	      		<div>
+	      			<ul style="height: 44px; background: #f6f6f6; font-size: 14px; display: inline-block; list-style: none;" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+	      				<li class="col-xs-3 col-sm-3 col-md-3 col-lg-3">宝贝详情</li>
+	      				<li class="col-xs-3 col-sm-3 col-md-3 col-lg-3">累计评论</li>
+	      				<li class="col-xs-3 col-sm-3 col-md-3 col-lg-3">专享服务</li>
+	      			</ul>
+	      		</div>
+	      		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="display: block;">
+	      			<div>
+	      				<ul>
+	      					<li>名字： <span>Scrappy</span></li>	
+	      					<li>品牌: <span>米其林</span></li>
+	      					<li>产地: <span>中国上海</span></li>	      					
+	      				</ul>
+	      				<br />
+	      				<hr />
+	      				<div col-xs-12 col-sm-12 col-md-12 col-lg-12>
+	      					<img src="/images/engine_1.jpg" style="width: 100%;" />
+	      				</div>
+	      			</div>
+	      		</div>
+	      		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="display: none;"></div>
+	      		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="display: none;"></div>
+	      	</div>
+		</div>
+		
+		<div id="modal-default" class="iziModal">
+			<strong>购买商品 ：</strong><span class="panel-name">V6发动机</span><br />
+            <strong>购买数量 ：</strong><span class="panel-num">1</span><br />
+            <strong>付款金额 ：</strong><span class="panel-amount">33.3</span>
+            <a href="/" style="float: right; color: #000000;"><button>确认并返回首页</button></a>
+        </div>
+	</body>
+  	<script src="/javascripts/connect.js"></script>
+  	<script>
+  		
+  	</script>
+</html>

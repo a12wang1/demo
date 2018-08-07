@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html;charset=gbk" />-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Automotive Part Shop</title>
+		<link href="/stylesheets/oswald.css" />
+  	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css"> 
+		<link href="/stylesheets/bootstrap.min.css" />
+  </head>
+  </head>
+  <body>
+    <div id= 'index' style="display: block;">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-8 col-sm-push-2">
+            <h1 class="text-center" >零部件选用系统</h1>
+            <hr/>
+            <br/>
+          </div>
+        </div>
+
+        <div id="partsRow" class="row">
+        </div>
+      </div>
+
+      <div id="partTemplate" style="display: none;">
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="panel panel-default panel-part">
+            <div class="panel-heading">
+              <h3 class="panel-title">Scrappy</h3>
+            </div>
+            <div class="panel-body">
+              <img alt="140*140" data-src="holder.js/140x140" class="img-rounded img-center" style="width: 230px; height:230px" src="/images/engine_1.jpg" data-holder-rendered="true">
+              <br/><br/>
+              <strong>品牌</strong>: <span class="part-breed"></span><br/>
+              <strong>产地</strong>: <span class="part-location"></span><br/>
+              <strong>总库存</strong>: <span class="part-quantity"></span><br/>
+               <strong>剩余库存</strong>: <span class="part-surplusstock"></span><br/><br/>
+              <button class="btn btn-default btn-adopt" type="button" data-id="0">详情</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="/javascripts/bootstrap.min.js"></script>
+    <script src="/javascripts/web3.min.js"></script>
+    <script src="/javascripts/truffle-contract.js"></script>
+		<script src="/javascripts/app.js"></script>
+  </body>
+</html>

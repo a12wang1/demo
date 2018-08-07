@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Automotive Part Shop</title>
+		<link href="/stylesheets/bootstrap.min.css" >
+	</head>
+	<body>
+		购买成功....<span>5</span>s后跳转首页<br />
+		<a href="/">跳转首页</a>
+	</body>
+	<script>
+		var span = document.getElementsByTagName("span")[0];
+		var time =5;
+		window.onload = function(){
+			var timer = setInterval(function(){
+				
+				time--;
+				if(time<=0){
+					clearInterval(timer);
+					time=5;
+					window.location.href= '/';
+				}
+				span.innerHTML = time;
+			},1000)
+		}
+			
+
+	</script>
+  	
+</html>

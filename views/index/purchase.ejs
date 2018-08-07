@@ -1,0 +1,100 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Automotive Part Shop</title>
+<style>
+	#purchase{moz-user-select: -moz-none;-moz-user-select: none;-o-user-select:none;-khtml-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none;border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0;width: 100%;text-align: center;margin:15px 0;}
+    #purchase th{cursor: pointer; background: #eee}
+    #purchase tr:nth-child(even){background: #f9f9f9}
+    #purchase th,#purchase td{padding: 10px; border:1px solid #ccc;}
+    .both {overflow: hidden;}
+    .left {float: left;}
+    .right {float: right;}
+    
+</style>
+</head>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+ <link rel="stylesheet" type="text/css" href="/stylesheets/iconfont.css">
+ <script src="/javascripts/purchase.js"></script>
+<body> 
+	<div style="overflow: hidden;">
+		<table id="purchase">
+			<thead>
+				<tr>
+					
+					<th data-type="num">
+						<div class="both">
+							<div class="left">编号</div>
+							<div class="right">
+								<div class="icon iconfont icon-jiantou_up" id="1"></div>
+								<div class="icon iconfont icon-jiantouxia" id="11"></div>
+								
+							</div>
+						</div>
+					</th>
+					<th>商品名称</th>
+					<th>商品品牌</th>
+					<th data-type="num">
+						<div class="both">
+							<div class="left">购买数量</div>
+							<div class="right">
+								<div class="icon iconfont icon-jiantou_up" id="2"></div>
+								<div class="icon iconfont icon-jiantouxia" id="22"></div>
+								
+							</div>
+						</div>
+					</th>
+					<th data-type="num">
+						<div class="both">
+							<div class="left">付款金额</div>
+							<div class="right">
+								<div class="icon iconfont icon-jiantou_up" id="3"></div>
+								<div class="icon iconfont icon-jiantouxia" id="33"></div>
+								
+							</div>
+						</div>
+					</th>
+					<th>客户账号</th>
+					<th>TXHASH</th>
+					<th >购买时间</th>
+				</tr>
+			</thead>
+			<tbody id="table2"></tbody>
+		</table>
+	
+		<div id="pager" style="float: right;"></div>
+	</div>
+	
+
+<table id="tableSort" style="display: none;">
+
+<tbody>
+<tr>
+<td class="id">7</td>
+<td class="name">1</td>
+<td class="brand">1</td>
+<td class="num">1</td>
+<td class="amount">11</td>
+<td class="useraccount">0x3F01D33faa61E890A2975574DBcf6b764868C5EF</td>
+<td class="txHash">11111</td>
+<td class="time">2018-07-26 17:57:41</td>
+</tr>
+</tbody>
+</table>
+
+    <script>
+        var pager = $('#pager').paginate({
+	        pageIndex: 0, //当前页数
+	        totlePageCount: 10, //总页数
+	        maxBtnCount: 5, //按钮数量最多有,
+	        maxlimit : 10,
+	        styleURL: '/stylesheets/style1.css' //样式路径 默认无样式
+	    });
+                        
+                    
+    </script>
+    
+<!--<script src="/javascripts/purchase.js"></script>-->
+</body>
+</html>
